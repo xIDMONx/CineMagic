@@ -12,7 +12,7 @@
 	<artifactId>cinemagic</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>cinemagic</name>
-	<description>CineMagic es una plataforma digital diseñada para los amantes del cine, que ofrece una experiencia única para la compra de boletos, visualización de horarios, y acceso a contenido exclusivo de películas. Esta plataforma es intuitiva y está orientada a mejorar la experiencia del usuario antes, durante y después de su visita al cine. CineMagic está preparada para escalar y adaptarse a una creciente comunidad de cinéfilos.</description>
+	<description>CineMagic es una plataforma digital diseñada para los amantes del cine, que ofrece una experiencia única para la compra de boletos, visualización de horarios, y acceso a contenido exclusivo de películas. Esta plataforma es intuitiva y está orientada a mejorar la experiencia del usuario antes, durante y después de su visita al cine.</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -32,12 +32,51 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-api</artifactId>
+			<version>0.12.6</version>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-impl</artifactId>
+			<version>0.12.6</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-jackson</artifactId>
+			<version>0.12.6</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>5.11.0</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
